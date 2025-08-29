@@ -1,5 +1,5 @@
 
-###macOS Natural Language Agent
+### macOS Natural Language Agent
 A minimal macOS agent that converts natural-language requests into system actions using JavaScript for Automation (JXA) and AppleScript.
 
 
@@ -11,7 +11,7 @@ The agent can interpret and execute three types of natural-language commands:
 “Convert all .docx to .pdf in <folder>”
 “Open Hacker News, grab the top 5 headlines, save to a Markdown file”
 ```
-##Architecture
+## Architecture
 
 ```
 Natural Language Input
@@ -27,14 +27,14 @@ Natural Language Input
    Logging + Results Summary
 ```
 
-##Setup
+## Setup
 ```
 macOS (tested on macOS 10.15+)
 Terminal access
 Internet connection (for the Hacker News API)
 ```
 
-##Grant Necessary permissions
+## Grant Necessary permissions
 
 ```
 On macOS Ventura (13)+
@@ -68,7 +68,7 @@ osascript -l JavaScript macos_agent.js "Find the 3 largest files in ~/Downloads 
 osascript -l JavaScript macos_agent.js "Convert all .docx to .pdf in ~/Documents"
 ```
 
-📋 Examples
+## Examples
 Example 1: Find Largest Files
 agent "Find the 3 largest files in ~/Downloads and zip them"
 
@@ -102,7 +102,7 @@ Creates a nicely formatted Markdown file (titles, URLs, scores)
 Saves to ~/hn_top5_headlines.md
 
 
-🔒 Safety Features
+## Safety Features
 Path Whitelist
 
 Operations are only allowed in safe directories by default:
